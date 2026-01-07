@@ -36,4 +36,86 @@ npm run dev
 ```sh
 npm run build
 ```
+
 # vue-pinia
+
+# Create vue-pinia project
+
+# Init Pinia Project
+
+```sh
+npm create vue@latest
+```
+
+```sh
+npm init vue@latest
+```
+
+```sh
+npm create vue@latest
+Need to install the following packages:
+  create-vue@3.18.5
+Ok to proceed? (y) y
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  Project name (target directory):
+│  vue-pinia
+│
+◇  Select features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter to
+confirm)
+│  Pinia (state management)
+│
+◇  Select experimental features to include in your project: (↑/↓ to navigate, space to select, a to toggle
+all, enter to confirm)
+│  Oxlint
+│
+◇  Skip all example code and start with a blank Vue project?
+│  Yes
+
+Scaffolding project in /home/klvst3r/dev/js/vue-pinia...
+│
+└  Done. Now run:
+
+   cd vue-pinia
+   npm install
+   npm run dev
+
+| Optional: Initialize Git in your project directory with:
+git init && git add -A && git commit -m "initial commit"
+
+```
+
+# Repo
+
+```sh
+cd vue-pinia/
+echo "# vue-pinia" >> README.md
+
+git init
+git add README.md
+git commit -m "Vue-Pinia"
+git branch -M main
+git remote add origin git@github.com:Klvst3r/vue-pinia.git
+
+git push -u origin main
+```
+
+# Install Pinia
+
+```sh
+npm install pinia
+```
+
+# Create a store
+
+```sh
+mkdir src/stores
+touch src/stores/counter.js
+```
+
+# Add Pinia to your main.js
+
+```js
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+```

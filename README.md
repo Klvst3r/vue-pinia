@@ -100,6 +100,34 @@ git remote add origin git@github.com:Klvst3r/vue-pinia.git
 git push -u origin main
 ```
 
+# Instalar dependencias
+
+```sh
+npm install
+
+```
+
+# Inicializar proyecto de Vue - Pinia
+
+```sh
+npm run dev
+```
+
+Genera esto:
+
+> vue-pinia@0.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+VITE v7.3.1 ready in 1233 ms
+
+➜ Local: http://localhost:5174/
+➜ Network: use --host to expose
+➜ Vue DevTools: Open http://localhost:5174/**devtools**/ as a separate window
+➜ Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+➜ press h + enter to show help
+
 # Install Pinia
 
 ```sh

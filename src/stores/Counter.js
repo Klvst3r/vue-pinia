@@ -1,4 +1,8 @@
+// Archivo de exportación
+
 import { defineStore } from 'pinia'
+
+import { ref } from 'vue'
 
 // export const useCounterStore = defineStore("counter", {
 //   state: () => ({
@@ -52,8 +56,27 @@ import { defineStore } from 'pinia'
 // })
 
 //Se recomienda utilizar una funcion en lugar de un objeto.
+// Tiene dos parametros, el identificador de la tienda y una funcion flecha
+
+// Se exporta este para utilizarla en los componentes
 export const useCounterStore = defineStore('counter', () => {
   //Variables
   //Metodos
   //Propiedades computadas
+  //const count = ref(0) //El usuario manipula directamente las propiedades
+  //Protegemos evitando que se retorne esa propiedad
+  //Salidas
+  // return {
+  //   //count //La propiedad no se retorna
+  // }
 })
+
+//Podria decir que tambien puedo exportar
+// export const prueba = "Prueba";
+
+//Puedo exportar una segunda vriable que sera prueba
+// export const prueba2 = "Prueba2";
+
+//Asi en este archivo estamos exportando una tienda y dos constantes
+
+//Despues nos vamos al archivo d eimprotación -> App .vue

@@ -5,10 +5,10 @@ import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
 </script>
 <template>
-  <button @click="counterStore.count--">-</button>
+  <button @click="counterStore.decrement()">-</button>
 
   <span> {{ counterStore.count }}</span>
 
-  <button @click="counterStore.count++">+</button>
+  <button @click="counterStore.increment()">+</button>
 </template>
 <style scoped></style>

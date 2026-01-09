@@ -75,8 +75,19 @@ export const useCounterStore = defineStore('counter', () => {
   //Los getters se definiran como propiedades computadas, retornara el value de la propieadad
   const count = computed(() => _count.value) //se accede a la propiedad reactiva _count y se retorna su valor
 
+  //Se definen los metodos, Las actions son funciones que se ejecutan en la tienda
+  function decrement() {
+    _count.value--
+  }
+
+  function increment() {
+    _count.value++
+  }
+
   return {
     count,
+    decrement,
+    increment,
   }
 })
 

@@ -2,7 +2,7 @@
 
 import { defineStore } from 'pinia'
 
-import { ref } from 'vue' //Definicion de ref para la constante reactiva
+import { computed, ref } from 'vue' //Definicion de ref para la constante reactiva
 
 // export const useCounterStore = defineStore("counter", {
 //   state: () => ({
@@ -70,10 +70,13 @@ export const useCounterStore = defineStore('counter', () => {
   //   //count //La propiedad no se retorna
   // }
   //Guardar estados
-  const count = ref(0) //constante reactiva, con esto nicializamos un estado de la tienda, junto con la definicion y la instancia
+  const _count = ref(0) //constante reactiva, con esto nicializamos un estado de la tienda, junto con la definicion y la instancia
+
+  //Los getters se definiran como propiedades computadas, retornara el value de la propieadad
+  const count = computed(() => _count.value) //se accede a la propiedad reactiva _count y se retorna su valor
 
   return {
-    count
+    count,
   }
 })
 

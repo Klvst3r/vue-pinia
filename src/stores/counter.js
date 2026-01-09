@@ -2,7 +2,7 @@
 
 import { defineStore } from 'pinia'
 
-import { ref } from 'vue'
+import { ref } from 'vue' //Definicion de ref para la constante reactiva
 
 // export const useCounterStore = defineStore("counter", {
 //   state: () => ({
@@ -69,6 +69,12 @@ export const useCounterStore = defineStore('counter', () => {
   // return {
   //   //count //La propiedad no se retorna
   // }
+  //Guardar estados
+  const count = ref(0) //constante reactiva, con esto nicializamos un estado de la tienda, junto con la definicion y la instancia
+
+  return {
+    count
+  }
 })
 
 //Podria decir que tambien puedo exportar
